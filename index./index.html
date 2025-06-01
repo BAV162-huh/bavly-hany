@@ -3,14 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>موقع أسئلة وأجوبة</title>
+  <title>موقع أسئلة وأجوبة - Q&A Website</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="container">
-    <h1>اسأل سؤالاً عن الحياة اليومية</h1>
+    <div class="lang-switch">
+      <button id="btn-ar" class="active">العربية</button>
+      <button id="btn-en">English</button>
+    </div>
+    <h1 id="title">اسأل سؤالاً عن الحياة اليومية</h1>
     <textarea id="question" placeholder="اكتب سؤالك هنا..."></textarea><br />
-    <button onclick="answerQuestion()">اسأل</button>
+    <button onclick="answerQuestion()" id="ask-btn">اسأل</button>
     <div class="answer" id="answer"></div>
   </div>
 
